@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Tidal Wave</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Artifact #4: Tidal Wave</h1>
+        <p>Ocean Themed Legendary Challenge</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>The Relentless Tide</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/tidalwave-thumb.jpg" alt="Tidal Wave Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "Drown them."
+        </div>
+        
+        <p>Tidal Wave is a blue-themed extreme demon created by <strong>OniLink</strong>. Known for its incredibly fast-paced wave gameplay and flashing effects, it demands perfection from start to finish.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">Zoink</span>
+                <span class="stat-sub">The Undisputed King</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Tidal Wave</span>
+                <span class="stat-sub">by Shiawase (RunoNG Rmx)</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">86407629</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">220,115 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>Only the most persistent swimmers have survived the tide.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                    <strong>Trick</strong> <span class="proof-tag">Verified Victor</span>
+                </li>
+                 <li class="victor-item">
+                    <strong>wPopoff</strong> <span class="proof-tag">Verified Victor</span>
+                </li>
+                 <li class="victor-item">
+                    <strong>mindzdraf</strong> <span class="proof-tag">Verified Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+    </footer>
+
+</body>
+</html>
