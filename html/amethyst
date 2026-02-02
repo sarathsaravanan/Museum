@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Amethyst</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Artifact #3: Amethyst</h1>
+        <p>The Crystal of the Depths</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>The Ancient Legend</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/amethyst-thumb.jpg" alt="Amethyst Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "An idea that started 5 years ago has now been brought to light. Venture into the depths of the cave to fulfill an ancient legend. Will you be the one to find the Amethyst crystal?"
+        </div>
+        
+        <p>Amethyst is a colossal collaboration hosted by <strong>Bedrock</strong> and published by <strong>iMist</strong>. It stands as a testament to long-term dedication, featuring a cohesive purple-themed atmosphere that challenges the world's best players.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">wPopoff</span>
+                <span class="stat-sub">Team WBT</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Ricochet Love</span>
+                <span class="stat-sub">by Waterflame</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">119550490</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">147,423 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>A select few have retrieved the crystal.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>Zoink</strong> <span class="proof-tag">Verified Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+    </footer>
+
+</body>
+</html>
