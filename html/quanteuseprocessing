@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Quanteuse Processing</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hell-theme">
+
+    <header>
+        <h1>Artifact #6: Quanteuse Processing</h1>
+        <p>The Most Disliked Top Ten</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>System Processing...</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/quanteuse_thumb.jpg" alt="Quanteuse Processing Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "verified by zoink, level by blankb and I"
+        </div>
+        
+        <p><strong>Quanteuse Processing</strong> is the newest addition to the apex of the Demonlist. Created by the duo <strong>Blankb & Renn241</strong>, this level stands as the most disliked top ten among the Geometry Dash community and difficulty, verified by the current champion, <strong>Zoink</strong>.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">Zoink</span>
+                <span class="stat-sub">Top 1 Player</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">List Rank</span>
+                <span class="stat-value">#6</span>
+                <span class="stat-sub">Main List</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">117692518</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">44,882 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section" style="border: 1px solid #ff0000; background: rgba(30, 0, 0, 0.8);">
+            <h3 style="color: #ff3333; text-transform: uppercase; letter-spacing: 2px;">⚠️ Status: Unconquered ⚠️</h3>
+            <p>This artifact remains undefeated by the public. The throne sits empty.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item" style="text-align: center; font-style: italic; opacity: 0.8;">
+                     <strong style="font-size: 1.2em; color: #ff6666;">NO HUMAN SURVIVORS RECORDED</strong>
+                     <br><br>
+                     <span class="proof-tag" style="background-color: #550000; color: white;">AWAITING CHALLENGER</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+        <p>Content generated with the assistance of AI.</p>
+    </footer>
+
+</body>
+</html>
