@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Thinking Space II</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Artifact #1: Thinking Space II</h1>
+        <p>The Current Apex of the Demon List</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>The Mindscape of Pure Insanity</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/thinkingspace2-thumb.jpg" alt="Thinking Space 2 Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "A mindscape of pure insanity, most fall to its brutal nature. Gameplay by CoCy team, Deco hosted by DrCuber, Verified by Zoink. Dedicated to Hideki &lt;3"
+        </div>
+        
+        <p>Thinking Space II stands as the current zenith of Geometry Dash difficulty. A collaborative effort led by <strong>Meatius</strong> and published by <strong>CairoX</strong>, it represents the absolute limit of human consistency.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">Zoink</span>
+                <span class="stat-sub">The only initial conqueror</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Nuke Powder</span>
+                <span class="stat-sub">by MaelouX</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">119544028</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">139,568 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>Only a single soul has managed to repeat the verifier's feat.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>wPopoff</strong> <span class="proof-tag">Verified Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+    </footer>
+
+</body>
+</html>
