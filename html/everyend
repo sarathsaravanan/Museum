@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Every End</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hell-theme">
+
+    <header>
+        <h1>Artifact #8: Every End</h1>
+        <p>Testing the Cubic Limit</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>Precision Over Aesthetics</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/everyend_thumb.jpg" alt="Every End Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "Never Ending"
+        </div>
+        
+        <p><strong>Every End</strong> stands out by stripping any fancy decoration. Published by <strong>MindCap</strong> and created by <strong>Koreaqwer</strong>, this level is famous for having barely any traditional decoration. Instead, it focuses entirely on raw gameplay.</p>
+        
+        <p>It is widely considered the ultimate test of the <strong>Cube gamemode</strong>, pushing the physics of the game to their absolute limit with a relentless series of <strong>frame-perfect</strong> timings that demand machine-like consistency.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">[FOWL] Hqmy</span>
+                <span class="stat-sub">Verifier</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Every End...</span>
+                <span class="stat-sub">by Dimrain47</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">116174063</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">326,380 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>Those who have mastered the perfect frame.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>Zoink</strong> <span class="proof-tag">Victor</span>
+                </li>
+                <li class="victor-item">
+                     <strong>[OG B] garbag</strong> <span class="proof-tag">Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+        <p>Content generated with the assistance of AI.</p>
+    </footer>
+
+</body>
+</html>
