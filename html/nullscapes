@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Nullscapes</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hell-theme">
+
+    <header>
+        <h1>Artifact #5: Nullscapes</h1>
+        <p>Robotic Madness</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>The Glitch in the System</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/nullscapes_thumb.jpg" alt="Nullscapes Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "GET OUT OF MY HEAD"
+        </div>
+        
+        <p><strong>Nullscapes</strong> represents the psychological breaking point of the list. Created by <strong>Kiba</strong> and verified by the legendary <strong>Zoink</strong>, this level is a "Digital Hell" known for its relentless speed, flashing effects, and oppressive atmosphere.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">Zoink</span>
+                <span class="stat-sub">Top 1 Player</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Flow</span>
+                <span class="stat-sub">by Creo</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">109780665</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">63,303 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>Only a handful of players have survived the glitch.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>spookkd</strong> <span class="proof-tag">Victor</span>
+                </li>
+                <li class="victor-item">
+                     <strong>whfyre</strong> <span class="proof-tag">Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+        <p>Content generated with the assistance of AI.</p>
+    </footer>
+
+</body>
+</html>
