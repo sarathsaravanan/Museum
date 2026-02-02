@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Andromeda</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hell-theme">
+
+    <header>
+        <h1>Artifact #9: Andromeda</h1>
+        <p>Space Themed Demon</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>A Galaxy in Chaos</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/andromeda_thumb.jpg" alt="Andromeda Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "verified by Taiago // playtested by guillexprex52..."
+        </div>
+        
+        <p><strong>Andromeda</strong> brings cosmic scale to the top 10. Created by <strong>Insxne97</strong>, this level is known for its staggering object density and overwhelming visual intensity. It represents the collision of artistic decoration and impossible difficulty.</p>
+        
+        <p>Sitting at the very edge of human capability, it demands total mastery of every gamemode. The high object count creates a dense, suffocating atmosphere that feels like navigating through a collapsing star, as it's named after a very famous galaxy, Andromeda!</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">[WBT] Taiago</span>
+                <span class="stat-sub">Verifier</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">omnipresent</span>
+                <span class="stat-sub">by WakerLink</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">114283297</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">179,342 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>Only the strongest travelers have survived the journey.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>Zoink</strong> <span class="proof-tag">Victor</span>
+                </li>
+                <li class="victor-item">
+                     <strong>[SSS] w3rty</strong> <span class="proof-tag">Victor</span>
+                </li>
+                <li class="victor-item">
+                     <strong>Nickname09</strong> <span class="proof-tag">Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+        <p>Content generated with the assistance of AI.</p>
+    </footer>
+
+</body>
+</html>
