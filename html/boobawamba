@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit: Boobawamba</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hell-theme">
+
+    <header>
+        <h1>Artifact #7: Boobawamba</h1>
+        <p>Blinded Challenge</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+
+    <main class="exhibit-container">
+        
+        <h2>Blindness and Fog</h2>
+
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="../images/boobawamba_thumb.jpg" alt="Boobawamba Gameplay" style="width:100%; max-width:600px; border: 2px solid #550000; border-radius: 4px;">
+        </div>
+
+        <div class="quote-box">
+            "BOOBAWAMBA is equal to {10, 100...} using the array of operator and BEAF"
+        </div>
+        
+        <p><strong>Boobawamba</strong> is an endurance test defined by its lack of vision throughout the level. Created by <strong>Akunakunn</strong>, the level utilizes thick fog and obscuring effects to simulate near-total blindness, forcing players to rely on memory and instinct rather than sight.</p>
+        
+        <p>It holds a notorious place in history for the <strong>longest drought</strong> between verification and the first victor. The community struggled for months to pierce the veil, making the eventual conquest a monumental event.</p>
+
+        <div class="stats-grid">
+            
+            <div class="stat-box">
+                <span class="stat-label">Verified By</span>
+                <span class="stat-value verified-color">eastshark</span>
+                <span class="stat-sub">Verifier</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Audio Track</span>
+                <span class="stat-value">Portal To The Other Side</span>
+                <span class="stat-sub">by nandinanubis</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Artifact ID</span>
+                <span class="stat-value">110816181</span>
+            </div>
+
+            <div class="stat-box">
+                <span class="stat-label">Complexity</span>
+                <span class="stat-value">92,583 Objects</span>
+            </div>
+        </div>
+
+        <div class="victor-section">
+            <h3>Recorded Victors (100%)</h3>
+            <p>The fog has finally lifted for one survivor.</p>
+            
+            <ul class="victor-list">
+                <li class="victor-item">
+                     <strong>[YAHO] agonom</strong> <span class="proof-tag">First Victor</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+        <p>This is a fictitious website created purely for academic purposes.</p>
+        <p>Content generated with the assistance of AI.</p>
+    </footer>
+
+</body>
+</html>
