@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Gift Shop - Geometry Dash</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="staff.html">Staff</a>
+        <a href="collections.html">Collections</a>
+        <a href="shop.html" class="active">Shop</a>
+    </nav>
+
+    <header>
+        <h1>The Secret Vault</h1>
+        <p>Take a piece of geometry history home with you.</p>
+    </header>
+
+    <main>
+        <div class="shop-container">
+
+            <div class="souvenir-item">
+                <img src="../images/shop/demonkey.jpg" alt="Demon Key Replica" title="Unlocks the secrets of the vault." onclick="openModal('Demon Key Replica', '../images/shop/demonkey.jpg', 'Solid brass replica from the Treasure Room.')">
+                <h3>Demon Key Replica</h3>
+                <p class="item-desc">Material: Brass | Location: The Vault</p>
+                <p class="item-price">$19.99</p>
+                <p class="item-id">ID: item001</p>
+                <button class="add-btn" onclick="addToCart('Demon Key Replica', 19.99)">Add Demon Key to Cart</button>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="../images/shop/manaorb.jpg" alt="Mana Orb Nightlight" title="Don't touch it or you'll jump!" onclick="openModal('Mana Orb Nightlight', '../images/shop/manaorb.jpg', 'Glowing green orb. Levitates via magnets.')">
+                <h3>Mana Orb Nightlight</h3>
+                <p class="item-desc">Material: Plastic/LED | Purpose: Illumination</p>
+                <p class="item-price">$24.50</p>
+                <p class="item-id">ID: item002</p>
+                <button class="add-btn" onclick="addToCart('Mana Orb Nightlight', 24.50)">Add Mana Orb to Cart</button>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="../images/shop/musicbox.jpg" alt="Practice Mode Music Box" title="Checkpoints not included." onclick="openModal('Practice Mode Music Box', '../images/shop/musicbox.jpg', 'Plays Stay Inside Me loop forever.')">
+                <h3>Practice Mode Box</h3>
+                <p class="item-desc">Material: Wood/Metal | Purpose: Musical Motivation</p>
+                <p class="item-price">$35.00</p>
+                <p class="item-id">ID: item003</p>
+                <button class="add-btn" onclick="addToCart('Practice Mode Box', 35.00)">Add Music Box to Cart</button>
+            </div>
+
+            <div class="souvenir-item">
+                <img src="../images/shop/robtop.jpg" alt="RobTop Plushie" title="Check Steam." onclick="openModal('RobTop Plushie', '../images/shop/robtop.jpg', 'The creator himself in soft plush form.')">
+                <h3>RobTop Plushie</h3>
+                <p class="item-desc">Material: Cotton | Purpose: Mental Help</p>
+                <p class="item-price">$30.00</p>
+                <p class="item-id">ID: item004</p>
+                <button class="add-btn" onclick="addToCart('RobTop Plushie', 30.00)">Add Plushie to Cart</button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Product Name</h2>
+            <img id="modalImg" src="" alt="Product Detail">
+            <p id="modalDesc
