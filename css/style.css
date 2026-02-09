@@ -1,18 +1,201 @@
-.shop-container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #4CAF50;
+}
+
+.three-columns {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
     gap: 20px;
-    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.column h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.level-card {
+    background: #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #555;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.level-card:hover {
+    transform: translateX(5px);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background: #e0e0e0;
+}
+
+.level-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.level-card .creator {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.rank-1 { border-left-color: #FFD700; background-color: #fffbe6; }
+.rank-2 { border-left-color: #C0C0C0; background-color: #f4f4f4; }
+.rank-3 { border-left-color: #CD7F32; background-color: #fff0e6; }
+
+.collection-container {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
+.collection-controls {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.collection-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.collection-controls button:hover {
+    background-color: #555;
+}
+
+.artifact-entry {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.artifact-image {
+    flex: 1;
+}
+
+.artifact-image img {
+    width: 100%;
+    border: 4px solid #333;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.artifact-data {
+    flex: 1.5;
+}
+
+.artifact-data h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.artifact-data ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.ai-disclaimer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .souvenir-item {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     padding: 15px;
-    width: 250px;
+    width: 260px;
     text-align: center;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.souvenir-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
 .souvenir-item img {
@@ -20,29 +203,46 @@
     height: 200px;
     object-fit: cover;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    border-bottom: 1px solid #eee;
     margin-bottom: 10px;
 }
 
+.souvenir-item h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.item-desc {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
 .item-price {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: #2c3e50;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .item-id {
-    font-size: 0.8em;
-    color: #666;
+    font-size: 0.75em;
+    color: #999;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .add-btn {
     background-color: #27ae60;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
+    transition: background-color 0.2s;
 }
 
 .add-btn:hover {
@@ -58,24 +258,28 @@
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.8); 
+    backdrop-filter: blur(5px);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto; 
-    padding: 20px;
+    background-color: #fff;
+    margin: 5% auto; 
+    padding: 30px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 12px;
     position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .modal-content img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
+    border-radius: 8px;
     margin: 20px 0;
+    border: 2px solid #eee;
 }
 
 .close-btn {
@@ -84,8 +288,39 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 .close-btn:hover {
-    color: black;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #222;
+    color: #aaa;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .three-columns {
+        flex-direction: column;
+    }
+    
+    .artifact-entry {
+        flex-direction: column;
+    }
+    
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
