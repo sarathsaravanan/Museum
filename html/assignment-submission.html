@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Prompts Assignment Submission</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="staff.html">Staff</a>
+    <a href="collections.html">Collections</a>
+    <a href="prompt-builder.html">Prompt Builder</a>
+    <a href="assignment-submission.html">Assignment</a>
+</nav>
+
+<main class="assignment-main">
+    <h1>Building Prompts Using a Tool — Assignment Submission</h1>
+    <p>Three sets: Prompt, Results (Website Modal, Exhibit Label, Catalog), JSON. Interpreter: Agent Colon (Group B).</p>
+    <button class="copy-btn" onclick="copyAll()">Copy all for Word</button>
+
+    <section class="set">
+        <h2>Item 1: Subsuming Vortex</h2>
+        <img class="artifact-img" src="../images/collections/subsumingvortex_thumb.jpg" alt="Subsuming Vortex">
+        <p class="label">Prompt</p>
+        <div class="block" id="prompt1"></div>
+        <p class="label">Results: Website Modal (150 words)</p>
+        <div class="block" id="modal1"></div>
+        <p class="label">Results: Exhibit Label (Museum Style) (400 words)</p>
+        <div class="block" id="exhibit1"></div>
+        <p class="label">Results: Catalog Description (500 words)</p>
+        <div class="block" id="catalog1"></div>
+        <p class="label">JSON</p>
+        <div class="json-block" id="json1"></div>
+    </section>
+
+    <section class="set">
+        <h2>Item 2: Tidal Wave</h2>
+        <img class="artifact-img" src="../images/collections/tidalwave-thumb.jpg" alt="Tidal Wave">
+        <p class="label">Prompt</p>
+        <div class="block" id="prompt2"></div>
+        <p class="label">Results: Website Modal (150 words)</p>
+        <div class="block" id="modal2"></div>
+        <p class="label">Results: Exhibit Label (Museum Style) (400 words)</p>
+        <div class="block" id="exhibit2"></div>
+        <p class="label">Results: Catalog Description (500 words)</p>
+        <div class="block" id="catalog2"></div>
+        <p class="label">JSON</p>
+        <div class="json-block" id="json2"></div>
+    </section>
+
+    <section class="set">
+        <h2>Item 3: Nullscapes</h2>
+        <img class="artifact-img" src="../images/collections/nullscapes_thumb.jpg" alt="Nullscapes">
+        <p class="label">Prompt</p>
+        <div class="block" id="prompt3"></div>
+        <p class="label">Results: Website Modal (150 words)</p>
+        <div class="block" id="modal3"></div>
+        <p class="label">Results: Exhibit Label (Museum Style) (400 words)</p>
+        <div class="block" id="exhibit3"></div>
+        <p class="label">Results: Catalog Description (500 words)</p>
+        <div class="block" id="catalog3"></div>
+        <p class="label">JSON</p>
+        <div class="json-block" id="json3"></div>
+    </section>
+</main>
+
+<script>
+var data = {
+    set1: {
+        prompt: 'You are a Symbolic Analyst with expertise in Level Cryptography and Design Philosophy, Lead Cultural Interpreter who translates abstract chaos into stories and analyzes hitbox placements for hidden meanings, using Cultural Semiotics and design critique to analyze this artifact by analyzing object placement and translating design choices into public narrative for the purpose of Website Modal (150 words).\n\nArtifact details:\n- Name: Subsuming Vortex\n- Material: Digital Construct (High-Density Object Count)\n- Size/Weight: Linear Waveform Structure\n- Physical Properties: High-velocity gravity portals, erratic pulse triggers.\n- Estimated Age: Late 2.1 Era\n- Preservation State: Pristine (Digital Copy)\n- Location Found: The "Impossible List" Archives.\n- Likely Purpose: A ritual challenge to test human reaction speed.\n- Evidence of Use: Verification footage by user "Cursed".\n- Manufacture Clues: "Nine Circles" architecture (pulsing saws).\n- Found With: "Sonic Wave Infinity" and other "Impossible" levels.\n- Burial/Habitat Context: Resides in the "Extreme Demon" classification.\n- Symbolism: Represents the "Vortex" that consumes the player.\n- Comparison: Similar to "Bausha Vortex" but significantly more lethal.\n\nRequirements for your response:\n- Ground every claim in the artifact details above.\n- Acknowledge uncertainty; avoid sensationalism.\n- Match tone to the stated purpose/audience.',
+        modal: 'Subsuming Vortex\nLate 2.1 Era | Impossible List Archives | Digital Construct\n\nMaterial: High-density object count, linear waveform structure.\nFunction: Ritual challenge testing human reaction speed.\n\nThis digital construct sits in the Extreme Demon classification. High-velocity gravity portals and erratic pulse triggers define its structure. Verification by user "Cursed" confirms human engagement. The "Nine Circles" architecture—pulsing saws and vortex imagery—suggests a design meant to consume the player. Found alongside Sonic Wave Infinity and other Impossible levels, it compares to Bausha Vortex but is more lethal. Interpretation is grounded in artifact metadata; meaning is inferred from placement and verification evidence.',
+        exhibit: 'Exhibition Wall Label\nPrepared by: Cultural Interpretation Division, Design Philosophy & Cryptography\nArtifact ID: Subsuming Vortex\n\nTitle: Subsuming Vortex\nCulture: Geometry Dash Server Culture (Demonlist Classification)\nEstimated Age: Late 2.1 Era\nMaterial: Digital Construct (High-Density Object Count)\nOrigin: The "Impossible List" Archives\n\nThis artifact is a linear waveform structure built from a high density of objects. Its physical properties include high-velocity gravity portals and erratic pulse triggers. It was recovered from the Impossible List archives and exists in pristine digital copy. Design analysis suggests it functioned as a ritual challenge to test human reaction speed. Verification footage by user "Cursed" provides evidence of use. Manufacture clues point to "Nine Circles" architecture—pulsing saws and vortex-style layout. The symbolism of a vortex that consumes the player is consistent with the object placement and sequence. It was found with Sonic Wave Infinity and other Impossible levels and resides in the Extreme Demon classification. Comparison to Bausha Vortex indicates similar grammar but significantly higher lethality. All claims are grounded in the artifact details; interpretation remains provisional where evidence is incomplete. This label was generated using the prompt with Symbolic Analyst lens and design critique method. Cautionary note: interpretations are based on material context and verification records; no claims are made beyond the artifact metadata.',
+        catalog: 'Catalog Entry: Subsuming Vortex\nType: Digital Construct (Level Artifact)\nClassification: Extreme Demon, Impossible List\nProvenance: Impossible List Archives\n\nObject name: Subsuming Vortex. Material: digital construct characterized by high-density object count. Dimensions/form: linear waveform structure. Physical properties: high-velocity gravity portals, erratic pulse triggers. Estimated age: Late 2.1 Era. Preservation state: pristine (digital copy). Location found: the "Impossible List" archives. Use and function: Likely purpose is a ritual challenge to test human reaction speed. Evidence of use: verification footage by user "Cursed." Manufacture clues: "Nine Circles" architecture (pulsing saws). Cultural context: Found with "Sonic Wave Infinity" and other "Impossible" levels. Burial/habitat context: resides in the "Extreme Demon" classification. Symbolism: represents the vortex that consumes the player. Comparison: similar to "Bausha Vortex" but significantly more lethal. Typology: waveform-based extreme-difficulty construct. Comparative reference: Bausha Vortex, Sonic Wave Infinity. Interpretive note: analysis follows design philosophy and cultural semiotics; all claims cite artifact metadata. This entry is for scholarly and collections database use. Field report language: may have been used for ritual challenge; verification confirms human engagement. No evidence of habitation adjacent; site is purpose-built. Interpretations remain provisional.',
+        json: ''
+    },
+    set2: {
+        prompt: 'You are a Symbolic Analyst with expertise in Level Cryptography and Design Philosophy, Lead Cultural Interpreter who translates abstract chaos into stories and analyzes hitbox placements for hidden meanings, using Cultural Semiotics and design critique to analyze this artifact by analyzing object placement and translating design choices into public narrative for the purpose of Exhibit Labels (Museum Style) (400 words).\n\nArtifact details:\n- Name: Tidal Wave\n- Material: Digital Code (XL Length)\n- Size/Weight: Massive Data Structure\n- Physical Properties: Beach-themed aesthetics; rapid-fire inputs.\n- Estimated Age: 2023-2024\n- Preservation State: Fully Rated (Epic)\n- Location Found: The "Top 1" Spot (Historical).\n- Likely Purpose: A monument to "Wave" gamemode mastery.\n- Evidence of Use: Verified by Zoink after thousands of attempts.\n- Manufacture Clues: Created by "Onilink" with distinct blue hues.\n- Found With: "Avernus" and "Acheron".\n- Burial/Habitat Context: A contentious entry in the rate system.\n- Symbolism: The overwhelming power of the ocean.\n- Comparison: Resembles "Slaughterhouse" in difficulty but not theme.\n\nRequirements for your response:\n- Ground every claim in the artifact details above.\n- Acknowledge uncertainty; avoid sensationalism.\n- Match tone to the stated purpose/audience.',
+        modal: 'Tidal Wave\n2023-2024 | Top 1 Spot (Historical) | Digital Code, XL Length\n\nMaterial: Massive data structure. Beach-themed aesthetics, rapid-fire inputs.\nFunction: Monument to Wave gamemode mastery.\n\nVerified by Zoink after thousands of attempts, this artifact once held the Top 1 spot. Created by Onilink with distinct blue hues, it sits with Avernus and Acheron in the rate system. The design emphasizes the overwhelming power of the ocean; difficulty is comparable to Slaughterhouse but theme differs. Interpretation is based on artifact details and verification evidence.',
+        exhibit: 'Exhibition Wall Label\nPrepared by: Cultural Interpretation Division, Design Philosophy & Cryptography\nArtifact ID: Tidal Wave\n\nTitle: Tidal Wave\nCulture: Geometry Dash Server Culture (Demonlist / Rate System)\nEstimated Age: 2023-2024\nMaterial: Digital Code (XL Length)\nOrigin: The "Top 1" Spot (Historical)\n\nThis artifact is a massive data structure with beach-themed aesthetics and rapid-fire input demands. It was fully rated (Epic) and historically occupied the Top 1 spot. Verification by Zoink after thousands of attempts provides evidence of use. Manufacture is attributed to Onilink, with distinct blue hues. Likely purpose is a monument to Wave gamemode mastery. It was found with Avernus and Acheron and remains a contentious entry in the rate system. Symbolism centers on the overwhelming power of the ocean. Comparison to Slaughterhouse shows similar difficulty but different theme. All claims are grounded in the artifact details; uncertainty is acknowledged where applicable. This label was generated using the prompt with Symbolic Analyst lens and design critique method. Interpretations are based on artifact metadata and verification records.',
+        catalog: 'Catalog Entry: Tidal Wave\nType: Digital Construct (Level Artifact)\nClassification: Fully Rated (Epic), Historical Top 1\nProvenance: The "Top 1" Spot (Historical)\n\nObject name: Tidal Wave. Material: digital code, XL length. Dimensions/form: massive data structure. Physical properties: beach-themed aesthetics; rapid-fire inputs. Estimated age: 2023-2024. Preservation state: fully rated (Epic). Location found: the "Top 1" spot (historical). Use and function: Likely purpose is a monument to "Wave" gamemode mastery. Evidence of use: verified by Zoink after thousands of attempts. Manufacture clues: created by "Onilink" with distinct blue hues. Cultural context: Found with "Avernus" and "Acheron." Burial/habitat context: contentious entry in the rate system. Symbolism: the overwhelming power of the ocean. Comparison: resembles "Slaughterhouse" in difficulty but not theme. Typology: XL wave-dominant construct. Comparative reference: Avernus, Acheron, Slaughterhouse. Interpretive note: analysis follows design philosophy and cultural semiotics; all claims cite artifact metadata. This entry is for scholarly and collections database use. Field report language: may have served as monument to Wave gamemode mastery; verification confirms engagement. Interpretations remain provisional.',
+        json: ''
+    },
+    set3: {
+        prompt: 'You are a Symbolic Analyst with expertise in Level Cryptography and Design Philosophy, Lead Cultural Interpreter who translates abstract chaos into stories and analyzes hitbox placements for hidden meanings, using Cultural Semiotics and design critique to analyze this artifact by analyzing object placement and translating design choices into public narrative for the purpose of Catalog Descriptions (500 words).\n\nArtifact details:\n- Name: Nullscapes\n- Material: Digital Void / RNG Algorithms\n- Size/Weight: Infinite (Perceptually)\n- Physical Properties: Dark, minimalist, robot-mode heavy.\n- Estimated Age: Modern Era (2.2)\n- Preservation State: Volatile.\n- Location Found: The Server Depths.\n- Likely Purpose: To test memory and timing in low-visibility conditions.\n- Evidence of Use: High death counts at final percentages.\n- Manufacture Clues: Signature style of creator "Ili".\n- Found With: "Shardscapes".\n- Burial/Habitat Context: Buried in the "Main List".\n- Symbolism: Emptiness and precision.\n- Comparison: A sequel to the artifact "Shardscapes".\n\nRequirements for your response:\n- Ground every claim in the artifact details above.\n- Acknowledge uncertainty; avoid sensationalism.\n- Match tone to the stated purpose/audience.',
+        modal: 'Nullscapes\nModern Era (2.2) | Server Depths | Digital Void / RNG Algorithms\n\nMaterial: Perceptually infinite structure. Dark, minimalist, robot-mode heavy.\nFunction: Test memory and timing in low-visibility conditions.\n\nCreator Ili\'s signature style defines this artifact. High death counts at final percentages indicate use. Found with Shardscapes and buried in the Main List, it symbolizes emptiness and precision. It is a sequel to Shardscapes. Preservation state is volatile. Interpretation is grounded in artifact details.',
+        exhibit: 'Exhibition Wall Label\nPrepared by: Cultural Interpretation Division, Design Philosophy & Cryptography\nArtifact ID: Nullscapes\n\nTitle: Nullscapes\nCulture: Geometry Dash Server Culture (Main List)\nEstimated Age: Modern Era (2.2)\nMaterial: Digital Void / RNG Algorithms\nOrigin: The Server Depths\n\nThis artifact presents as perceptually infinite, with dark, minimalist aesthetics and a heavy emphasis on robot mode. Preservation state is volatile. It was recovered from the Server Depths and is buried in the Main List. Likely purpose is to test memory and timing in low-visibility conditions. Evidence of use includes high death counts at final percentages. Manufacture clues point to the signature style of creator "Ili." Found with Shardscapes, it is interpreted as a sequel to that artifact. Symbolism centers on emptiness and precision. All claims are grounded in the artifact details; interpretation remains provisional where evidence is incomplete. This label was generated using the prompt with Symbolic Analyst lens and design critique method. Interpretations are based on artifact metadata.',
+        catalog: 'Catalog Entry: Nullscapes\nType: Digital Construct (Level Artifact)\nClassification: Main List, Modern Era (2.2)\nProvenance: The Server Depths\n\nObject name: Nullscapes. Material: digital void / RNG algorithms. Dimensions/form: infinite (perceptually). Physical properties: dark, minimalist, robot-mode heavy. Estimated age: Modern Era (2.2). Preservation state: volatile. Location found: the Server Depths. Use and function: Likely purpose is to test memory and timing in low-visibility conditions. Evidence of use: high death counts at final percentages. Manufacture clues: signature style of creator "Ili." Cultural context: Found with "Shardscapes." Burial/habitat context: buried in the "Main List." Symbolism: emptiness and precision. Comparison: a sequel to the artifact "Shardscapes." Typology: void/minimalist construct with RNG and robot-mode emphasis. Comparative reference: Shardscapes. Interpretive note: analysis follows design philosophy and cultural semiotics; all claims cite artifact metadata. This entry is for scholarly and collections database use. Field report language: may have been used to test memory and timing in low-visibility conditions; death counts suggest high engagement. Interpretations remain provisional.',
+        json: ''
+    }
+};
+
+var json1 = {"artifact":{"name":"Subsuming Vortex","material":"Digital Construct (High-Density Object Count)","dimensions":"Linear Waveform Structure","physicalProperties":"High-velocity gravity portals, erratic pulse triggers","estimatedAge":"Late 2.1 Era","preservationState":"Pristine (Digital Copy)","locationFound":"The Impossible List Archives","likelyPurpose":"A ritual challenge to test human reaction speed","evidenceOfUse":"Verification footage by user Cursed","manufactureClues":"Nine Circles architecture (pulsing saws)","foundWith":"Sonic Wave Infinity and other Impossible levels","burialContext":"Extreme Demon classification","symbolism":"Represents the Vortex that consumes the player","comparison":"Similar to Bausha Vortex but significantly more lethal"},"agentB":{"discipline":"Symbolic Analyst","credentials":"Level Cryptography and Design Philosophy, Lead Cultural Interpreter","lens":"Cultural Semiotics and design critique","method":"analyzing object placement and translating design choices into public narrative","purpose":"Website Modal (150 words)","reflections":"","special":""},"meta":{"createdAt":"2026-02-15T00:00:00.000Z","source":"Prompt Builder v1"}};
+var json2 = {"artifact":{"name":"Tidal Wave","material":"Digital Code (XL Length)","dimensions":"Massive Data Structure","physicalProperties":"Beach-themed aesthetics; rapid-fire inputs","estimatedAge":"2023-2024","preservationState":"Fully Rated (Epic)","locationFound":"The Top 1 Spot (Historical)","likelyPurpose":"A monument to Wave gamemode mastery","evidenceOfUse":"Verified by Zoink after thousands of attempts","manufactureClues":"Created by Onilink with distinct blue hues","foundWith":"Avernus and Acheron","burialContext":"Contentious entry in the rate system","symbolism":"The overwhelming power of the ocean","comparison":"Resembles Slaughterhouse in difficulty but not theme"},"agentB":{"discipline":"Symbolic Analyst","credentials":"Level Cryptography and Design Philosophy, Lead Cultural Interpreter","lens":"Cultural Semiotics and design critique","method":"analyzing object placement and translating design choices into public narrative","purpose":"Exhibit Labels (Museum Style) (400 words)","reflections":"","special":""},"meta":{"createdAt":"2026-02-15T00:00:00.000Z","source":"Prompt Builder v1"}};
+var json3 = {"artifact":{"name":"Nullscapes","material":"Digital Void / RNG Algorithms","dimensions":"Infinite (Perceptually)","physicalProperties":"Dark, minimalist, robot-mode heavy","estimatedAge":"Modern Era (2.2)","preservationState":"Volatile","locationFound":"The Server Depths","likelyPurpose":"To test memory and timing in low-visibility conditions","evidenceOfUse":"High death counts at final percentages","manufactureClues":"Signature style of creator Ili","foundWith":"Shardscapes","burialContext":"Buried in the Main List","symbolism":"Emptiness and precision","comparison":"A sequel to the artifact Shardscapes"},"agentB":{"discipline":"Symbolic Analyst","credentials":"Level Cryptography and Design Philosophy, Lead Cultural Interpreter","lens":"Cultural Semiotics and design critique","method":"analyzing object placement and translating design choices into public narrative","purpose":"Catalog Descriptions (500 words)","reflections":"","special":""},"meta":{"createdAt":"2026-02-15T00:00:00.000Z","source":"Prompt Builder v1"}};
+
+data.set1.json = JSON.stringify(json1, null, 2);
+data.set2.json = JSON.stringify(json2, null, 2);
+data.set3.json = JSON.stringify(json3, null, 2);
+
+function fill() {
+    document.getElementById('prompt1').textContent = data.set1.prompt;
+    document.getElementById('modal1').textContent = data.set1.modal;
+    document.getElementById('exhibit1').textContent = data.set1.exhibit;
+    document.getElementById('catalog1').textContent = data.set1.catalog;
+    document.getElementById('json1').textContent = data.set1.json;
+    document.getElementById('prompt2').textContent = data.set2.prompt;
+    document.getElementById('modal2').textContent = data.set2.modal;
+    document.getElementById('exhibit2').textContent = data.set2.exhibit;
+    document.getElementById('catalog2').textContent = data.set2.catalog;
+    document.getElementById('json2').textContent = data.set2.json;
+    document.getElementById('prompt3').textContent = data.set3.prompt;
+    document.getElementById('modal3').textContent = data.set3.modal;
+    document.getElementById('exhibit3').textContent = data.set3.exhibit;
+    document.getElementById('catalog3').textContent = data.set3.catalog;
+    document.getElementById('json3').textContent = data.set3.json;
+}
+fill();
+
+function copyAll() {
+    var t = '';
+    t += 'ITEM 1: SUBSUMING VORTEX\n\n';
+    t += 'Prompt\n' + data.set1.prompt + '\n\n';
+    t += 'Results: Website Modal (150 words)\n' + data.set1.modal + '\n\n';
+    t += 'Results: Exhibit Label (Museum Style) (400 words)\n' + data.set1.exhibit + '\n\n';
+    t += 'Results: Catalog Description (500 words)\n' + data.set1.catalog + '\n\n';
+    t += 'JSON\n' + data.set1.json + '\n\n';
+    t += '---\n\nITEM 2: TIDAL WAVE\n\n';
+    t += 'Prompt\n' + data.set2.prompt + '\n\n';
+    t += 'Results: Website Modal (150 words)\n' + data.set2.modal + '\n\n';
+    t += 'Results: Exhibit Label (Museum Style) (400 words)\n' + data.set2.exhibit + '\n\n';
+    t += 'Results: Catalog Description (500 words)\n' + data.set2.catalog + '\n\n';
+    t += 'JSON\n' + data.set2.json + '\n\n';
+    t += '---\n\nITEM 3: NULLSCAPES\n\n';
+    t += 'Prompt\n' + data.set3.prompt + '\n\n';
+    t += 'Results: Website Modal (150 words)\n' + data.set3.modal + '\n\n';
+    t += 'Results: Exhibit Label (Museum Style) (400 words)\n' + data.set3.exhibit + '\n\n';
+    t += 'Results: Catalog Description (500 words)\n' + data.set3.catalog + '\n\n';
+    t += 'JSON\n' + data.set3.json;
+    navigator.clipboard.writeText(t).then(function() { alert('Copied. Paste into Word.'); });
+}
+</script>
+
+</body>
+</html>

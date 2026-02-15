@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Builder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="staff.html">Staff</a>
+    <a href="collections.html">Collections</a>
+    <a href="prompt-builder.html">Prompt Builder</a>
+    <a href="assignment-submission.html">Assignment</a>
+</nav>
+
+<main class="prompt-builder-main">
+    <h1>Prompt Builder</h1>
+
+    <div class="form-section">
+        <h3>Item / Artifact</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="material" placeholder="Material">
+        <input type="text" id="dimensions" placeholder="Dimensions">
+        <textarea id="physicalProperties" placeholder="Physical properties"></textarea>
+        <input type="text" id="estimatedAge" placeholder="Estimated Age">
+        <input type="text" id="preservationState" placeholder="Preservation State">
+        <input type="text" id="locationFound" placeholder="Location Found">
+        <input type="text" id="likelyPurpose" placeholder="Likely Purpose">
+        <input type="text" id="evidenceOfUse" placeholder="Evidence of Use">
+        <input type="text" id="manufactureClues" placeholder="Manufacture Clues">
+        <input type="text" id="foundWith" placeholder="Found With">
+        <input type="text" id="burialContext" placeholder="Burial or Habitat Context">
+        <input type="text" id="symbolism" placeholder="Symbolism">
+        <input type="text" id="comparison" placeholder="Comparison">
+    </div>
+
+    <div class="form-section">
+        <h3>Interpreter (Group B Staff)</h3>
+        <textarea id="credentials" placeholder="Professional Credentials"></textarea>
+        <input type="text" id="discipline" placeholder="Interpretive Discipline">
+        <input type="text" id="lens" placeholder="Interpretive Lens">
+        <input type="text" id="method" placeholder="Interpretive Method">
+        <select id="purpose">
+            <option value="Website Modal (150 words)">Website Modal (150 words)</option>
+            <option value="Exhibit Labels (Museum Style) (400 words)">Exhibit Labels (Museum Style) (400 words)</option>
+            <option value="Catalog Descriptions (500 words)">Catalog Descriptions (500 words)</option>
+        </select>
+        <textarea id="reflections" placeholder="Reflection Prompts (optional)"></textarea>
+        <textarea id="special" placeholder="Special Considerations (optional)"></textarea>
+    </div>
+
+    <button class="btn" onclick="buildPrompt()">Build Prompt</button>
+    <button class="btn" onclick="saveDraft()">Save Draft</button>
+    <button class="btn" onclick="loadDraft()">Load Draft</button>
+    <button class="btn" onclick="showJson()">View JSON</button>
+    <button class="btn" onclick="saveJson()">Save JSON</button>
+
+    <div class="form-section">
+        <h3>Generated Prompt</h3>
+        <div id="promptOutput"></div>
+    </div>
+
+    <div class="form-section">
+        <h3>JSON</h3>
+        <div id="jsonOutput"></div>
+    </div>
+</main>
+
+<script>
+function getData() {
+    return {
+        artifact: {
+            name: document.getElementById('name').value,
+            material: document.getElementById('material').value,
+            dimensions: document.getElementById('dimensions').value,
+            physicalProperties: document.getElementById('physicalProperties').value,
+            estimatedAge: document.getElementById('estimatedAge').value,
+            preservationState: document.getElementById('preservationState').value,
+            locationFound: document.getElementById('locationFound').value,
+            likelyPurpose: document.getElementById('likelyPurpose').value,
+            evidenceOfUse: document.getElementById('evidenceOfUse').value,
+            manufactureClues: document.getElementById('manufactureClues').value,
+            foundWith: document.getElementById('foundWith').value,
+            burialContext: document.getElementById('burialContext').value,
+            symbolism: document.getElementById('symbolism').value,
+            comparison: document.getElementById('comparison').value
+        },
+        agentB: {
+            credentials: document.getElementById('credentials').value,
+            discipline: document.getElementById('discipline').value,
+            lens: document.getElementById('lens').value,
+            method: document.getElementById('method').value,
+            purpose: document.getElementById('purpose').value,
+            reflections: document.getElementById('reflections').value,
+            special: document.getElementById('special').value
+        }
+    };
+}
+
+function buildPrompt() {
+    var d = getData();
+    var a = d.artifact;
+    var b = d.agentB;
+    var prompt = 'You are a ' + b.discipline + ' with ' + b.credentials + ' using ' + b.lens + ' to analyze this artifact by ' + b.method + ' for the purpose of ' + b.purpose + '.\n\n';
+    prompt += 'Artifact details:\n';
+    if (a.name) prompt += '- Name: ' + a.name + '\n';
+    if (a.material) prompt += '- Material: ' + a.material + '\n';
+    if (a.dimensions) prompt += '- Dimensions: ' + a.dimensions + '\n';
+    if (a.physicalProperties) prompt += '- Physical Properties: ' + a.physicalProperties + '\n';
+    if (a.estimatedAge) prompt += '- Estimated Age: ' + a.estimatedAge + '\n';
+    if (a.preservationState) prompt += '- Preservation State: ' + a.preservationState + '\n';
+    if (a.locationFound) prompt += '- Location Found: ' + a.locationFound + '\n';
+    if (a.likelyPurpose) prompt += '- Likely Purpose: ' + a.likelyPurpose + '\n';
+    if (a.evidenceOfUse) prompt += '- Evidence of Use: ' + a.evidenceOfUse + '\n';
+    if (a.manufactureClues) prompt += '- Manufacture Clues: ' + a.manufactureClues + '\n';
+    if (a.foundWith) prompt += '- Found With: ' + a.foundWith + '\n';
+    if (a.burialContext) prompt += '- Burial/Habitat Context: ' + a.burialContext + '\n';
+    if (a.symbolism) prompt += '- Symbolism: ' + a.symbolism + '\n';
+    if (a.comparison) prompt += '- Comparison: ' + a.comparison + '\n';
+    prompt += '\nRequirements for your response:\n- Ground every claim in the artifact details above.\n- Acknowledge uncertainty; avoid sensationalism.\n- Match tone to the stated purpose/audience.';
+    document.getElementById('promptOutput').textContent = prompt;
+}
+
+function getJson() {
+    var d = getData();
+    d.meta = { createdAt: new Date().toISOString(), source: 'Prompt Builder v1' };
+    return JSON.stringify(d, null, 2);
+}
+
+function showJson() {
+    document.getElementById('jsonOutput').textContent = getJson();
+}
+
+function saveJson() {
+    var blob = new Blob([getJson()], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'prompt-' + Date.now() + '.json';
+    a.click();
+}
+
+function saveDraft() {
+    var d = getData();
+    localStorage.setItem('promptDraft', JSON.stringify(d));
+    alert('Draft saved.');
+}
+
+function loadDraft() {
+    var s = localStorage.getItem('promptDraft');
+    if (!s) { alert('No draft found.'); return; }
+    var d = JSON.parse(s);
+    document.getElementById('name').value = d.artifact.name || '';
+    document.getElementById('material').value = d.artifact.material || '';
+    document.getElementById('dimensions').value = d.artifact.dimensions || '';
+    document.getElementById('physicalProperties').value = d.artifact.physicalProperties || '';
+    document.getElementById('estimatedAge').value = d.artifact.estimatedAge || '';
+    document.getElementById('preservationState').value = d.artifact.preservationState || '';
+    document.getElementById('locationFound').value = d.artifact.locationFound || '';
+    document.getElementById('likelyPurpose').value = d.artifact.likelyPurpose || '';
+    document.getElementById('evidenceOfUse').value = d.artifact.evidenceOfUse || '';
+    document.getElementById('manufactureClues').value = d.artifact.manufactureClues || '';
+    document.getElementById('foundWith').value = d.artifact.foundWith || '';
+    document.getElementById('burialContext').value = d.artifact.burialContext || '';
+    document.getElementById('symbolism').value = d.artifact.symbolism || '';
+    document.getElementById('comparison').value = d.artifact.comparison || '';
+    document.getElementById('credentials').value = d.agentB.credentials || '';
+    document.getElementById('discipline').value = d.agentB.discipline || '';
+    document.getElementById('lens').value = d.agentB.lens || '';
+    document.getElementById('method').value = d.agentB.method || '';
+    document.getElementById('reflections').value = d.agentB.reflections || '';
+    document.getElementById('special').value = d.agentB.special || '';
+    alert('Draft loaded.');
+}
+</script>
+
+</body>
+</html>
