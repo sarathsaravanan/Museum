@@ -530,3 +530,278 @@ footer p {
 .stat-value--warning {
     color: red;
 }
+
+body.hell-theme {
+    background-color: #1a0a0a;
+    color: #e8e0e0;
+}
+
+body.hell-theme header {
+    background-color: #2a0a0a;
+    color: #fff;
+    border-bottom: 3px solid #8b0000;
+    box-shadow: 0 4px 20px rgba(139, 0, 0, 0.3);
+}
+
+body.hell-theme nav {
+    background-color: #150505;
+    border-bottom: 1px solid #550000;
+}
+
+body.hell-theme nav a {
+    color: #ff6666;
+}
+
+body.hell-theme nav a:hover,
+body.hell-theme nav a.active {
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+body.hell-theme .column {
+    background-color: #220a0a;
+    border: 1px solid #550000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.hell-theme .column h2 {
+    border-bottom-color: #8b0000;
+    color: #ff8888;
+}
+
+body.hell-theme .level-card {
+    background-color: #1a0808;
+    border-left-color: #8b0000;
+    border: 1px solid #330000;
+    border-left: 5px solid #8b0000;
+}
+
+body.hell-theme .level-card:hover {
+    background-color: #2a1010;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+}
+
+body.hell-theme .level-card .creator {
+    color: #aa8888;
+}
+
+body.hell-theme .rank-1 { border-left-color: #ff6600; background-color: #2a1505; }
+body.hell-theme .rank-2 { border-left-color: #994444; background-color: #221010; }
+body.hell-theme .rank-3 { border-left-color: #773311; background-color: #251508; }
+
+body.hell-theme .collection-controls {
+    background-color: #1a0808;
+    border: 1px solid #550000;
+}
+
+body.hell-theme .collection-controls button {
+    background-color: #8b0000;
+    color: #fff;
+}
+
+body.hell-theme .collection-controls button:hover {
+    background-color: #b22222;
+}
+
+body.hell-theme .artifact-entry {
+    border-bottom-color: #440000;
+}
+
+body.hell-theme .artifact-image img {
+    border-color: #8b0000;
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.2);
+}
+
+body.hell-theme .artifact-data h3 {
+    border-bottom-color: #550000;
+    color: #ff8888;
+}
+
+body.hell-theme .artifact-data ul {
+    color: #ddd;
+}
+
+body.hell-theme .ai-disclaimer {
+    color: #886666;
+}
+
+body.hell-theme .souvenir-item {
+    background-color: #220a0a;
+    border-color: #550000;
+}
+
+body.hell-theme .souvenir-item:hover {
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+}
+
+body.hell-theme .item-desc {
+    color: #aa9999;
+}
+
+body.hell-theme .item-price {
+    color: #ff6666;
+}
+
+body.hell-theme .add-btn {
+    background-color: #8b0000;
+}
+
+body.hell-theme .add-btn:hover {
+    background-color: #b22222;
+}
+
+body.hell-theme footer {
+    background-color: #0d0303;
+    color: #886666;
+    border-top: 1px solid #550000;
+}
+
+body.hell-theme .prompt-builder-main,
+body.hell-theme .assignment-main {
+    color: #e8e0e0;
+}
+
+body.hell-theme .form-section {
+    background-color: #220a0a;
+    border: 1px solid #550000;
+}
+
+body.hell-theme .form-section h3 {
+    color: #ff8888;
+}
+
+body.hell-theme .prompt-builder-main input,
+body.hell-theme .prompt-builder-main textarea,
+body.hell-theme .prompt-builder-main select {
+    background-color: #1a0808;
+    color: #e8e0e0;
+    border: 1px solid #550000;
+}
+
+body.hell-theme .prompt-builder-main input::placeholder,
+body.hell-theme .prompt-builder-main textarea::placeholder {
+    color: #886666;
+}
+
+body.hell-theme #promptOutput,
+body.hell-theme #jsonOutput {
+    background-color: #1a0808;
+    color: #ddd;
+    border: 1px solid #550000;
+}
+
+body.hell-theme .btn {
+    background-color: #8b0000;
+    color: #fff;
+    border: 1px solid #aa3333;
+}
+
+body.hell-theme .btn:hover {
+    background-color: #b22222;
+}
+
+body.hell-theme .set {
+    background-color: #220a0a;
+    border: 1px solid #550000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.hell-theme .set h2 {
+    border-bottom-color: #8b0000;
+    color: #ff8888;
+}
+
+body.hell-theme .label {
+    color: #ffaaaa;
+}
+
+body.hell-theme .block {
+    background-color: #1a0808;
+    color: #ddd;
+    border: 1px solid #440000;
+}
+
+body.hell-theme .json-block {
+    background-color: #1a0808;
+    color: #ccc;
+    border: 1px solid #440000;
+}
+
+body.hell-theme .copy-btn {
+    background-color: #8b0000;
+    color: #fff;
+    border: 1px solid #aa3333;
+}
+
+body.hell-theme .copy-btn:hover {
+    background-color: #b22222;
+}
+
+body.hell-theme .collection-container {
+    color: #e8e0e0;
+}
+
+body.hell-theme .collection-title,
+body.hell-theme .section-header {
+    color: #ff8888;
+}
+
+body.hell-theme .artifact-data h3,
+body.hell-theme .artifact-data h4 {
+    color: #ff8888;
+}
+
+body.hell-theme .staff-card,
+body.hell-theme .staff-container {
+    color: #e8e0e0;
+}
+
+body.hell-theme .staff-card h2 a,
+body.hell-theme .staff-card h2 {
+    color: #ff8888;
+}
+
+body.hell-theme .exhibit-container {
+    color: #e8e0e0;
+}
+
+body.hell-theme .exhibit-container h1,
+body.hell-theme .exhibit-container h2 {
+    color: #ff8888;
+}
+
+body.hell-theme .quote-box {
+    background: rgba(139, 0, 0, 0.2);
+    border-left: 4px solid #ff0000;
+    color: #ffcccc;
+}
+
+body.hell-theme .stats-grid .stat-box {
+    background-color: #1a0808;
+    border: 1px solid #550000;
+}
+
+body.hell-theme .stat-label {
+    color: #aa8888;
+}
+
+body.hell-theme .stat-value {
+    color: #ff8888;
+}
+
+body.hell-theme .collection-item {
+    border-bottom-color: #440000;
+}
+
+body.hell-theme .collection-item-img-wrap img {
+    border-color: #8b0000;
+}
+
+body.hell-theme .collection-item-caption {
+    color: #886666;
+}
+
+body.hell-theme .collection-item-text h3,
+body.hell-theme .collection-item-text h4 {
+    color: #ff8888;
+}
