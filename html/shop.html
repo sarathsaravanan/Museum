@@ -13,6 +13,7 @@
         <a href="staff.html">Staff</a>
         <a href="collections.html">Collections</a>
         <a href="shop.html" class="active">Shop</a>
+        <button type="button" class="nav-cart-btn" onclick="location.href='cart.html'">View Cart</button>
     </nav>
 
     <header>
@@ -29,7 +30,8 @@
                 <p class="item-desc">Material: Brass | Location: The Vault</p>
                 <p class="item-price">$19.99</p>
                 <p class="item-id">ID: item001</p>
-                <button class="add-btn" onclick="addToCart('Demon Key Replica', 19.99)">Add Demon Key to Cart</button>
+                <span class="qty-badge" aria-live="polite"></span>
+                <button class="add-btn" type="button" onclick="addToCart(this)" data-id="item001" data-name="Demon Key Replica" data-price="19.99" data-image="../images/shop/demonkey.jpg">Add Demon Key to Cart</button>
             </div>
 
             <div class="souvenir-item">
@@ -38,7 +40,8 @@
                 <p class="item-desc">Material: Plastic/LED | Purpose: Illumination</p>
                 <p class="item-price">$24.50</p>
                 <p class="item-id">ID: item002</p>
-                <button class="add-btn" onclick="addToCart('Mana Orb Nightlight', 24.50)">Add Mana Orb to Cart</button>
+                <span class="qty-badge" aria-live="polite"></span>
+                <button class="add-btn" type="button" onclick="addToCart(this)" data-id="item002" data-name="Mana Orb Nightlight" data-price="24.50" data-image="../images/shop/manaorb.jpg">Add Mana Orb to Cart</button>
             </div>
 
             <div class="souvenir-item">
@@ -47,7 +50,8 @@
                 <p class="item-desc">Material: Wood/Metal | Purpose: Musical Motivation</p>
                 <p class="item-price">$35.00</p>
                 <p class="item-id">ID: item003</p>
-                <button class="add-btn" onclick="addToCart('Practice Mode Box', 35.00)">Add Music Box to Cart</button>
+                <span class="qty-badge" aria-live="polite"></span>
+                <button class="add-btn" type="button" onclick="addToCart(this)" data-id="item003" data-name="Practice Mode Box" data-price="35.00" data-image="../images/shop/musicbox.jpg">Add Music Box to Cart</button>
             </div>
 
             <div class="souvenir-item">
@@ -56,7 +60,8 @@
                 <p class="item-desc">Material: Cotton | Purpose: Mental Help</p>
                 <p class="item-price">$30.00</p>
                 <p class="item-id">ID: item004</p>
-                <button class="add-btn" onclick="addToCart('RobTop Plushie', 30.00)">Add Plushie to Cart</button>
+                <span class="qty-badge" aria-live="polite"></span>
+                <button class="add-btn" type="button" onclick="addToCart(this)" data-id="item004" data-name="RobTop Plushie" data-price="30.00" data-image="../images/shop/robtop.jpg">Add Plushie to Cart</button>
             </div>
 
         </div>
@@ -67,4 +72,27 @@
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <h2 id="modalTitle">Product Name</h2>
             <img id="modalImg" src="" alt="Product Detail">
-            <p id="modalDesc
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Demon Museum</p>
+    </footer>
+
+    <script src="../js/shop.js"></script>
+    <script>
+    (function() {
+      var cart = readCart();
+      document.querySelectorAll('.souvenir-item').forEach(function(card) {
+        var btn = card.querySelector('.add-btn');
+        if (btn && btn.dataset.id) {
+          var it = cart.find(function(x) { return x.id === btn.dataset.id; });
+          var badge = card.querySelector('.qty-badge');
+          if (badge) badge.textContent = it ? 'Qty: ' + it.qty : '';
+        }
+      });
+    })();
+    </script>
+</body>
+</html>

@@ -310,6 +310,98 @@ footer p {
     font-size: 0.9rem;
 }
 
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-empty {
+    margin-bottom: 1rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cart-table .amount-col {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.cart-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.cart-summary {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 10px;
+}
+
+.cart-summary td {
+    padding: 4px 8px;
+}
+
+.cart-summary .amount-col {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.cart-remove-btn,
+.cart-clear-btn {
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.cart-remove-btn:hover,
+.cart-clear-btn:hover {
+    background: #555;
+}
+
+.cart-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.nav-cart-btn {
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.nav-cart-btn:hover {
+    background: #555;
+}
+
+.qty-badge {
+    display: block;
+    margin: 4px 0;
+    font-weight: bold;
+    min-height: 1.2em;
+}
+
 @media (max-width: 768px) {
     .three-columns {
         flex-direction: column;
@@ -878,4 +970,37 @@ body.hell-theme .history-text p {
 
 body.hell-theme .history-back a {
     color: #ff6666;
+}
+
+body.hell-theme .nav-cart-btn {
+    background: #8b0000;
+    color: #fff;
+}
+
+body.hell-theme .nav-cart-btn:hover {
+    background: #b22222;
+}
+
+body.hell-theme .cart-remove-btn,
+body.hell-theme .cart-clear-btn {
+    background: #8b0000;
+    color: #fff;
+}
+
+body.hell-theme .cart-remove-btn:hover,
+body.hell-theme .cart-clear-btn:hover {
+    background: #b22222;
+}
+
+body.hell-theme .cart-link {
+    color: #ff6666;
+}
+
+body.hell-theme .cart-table th,
+body.hell-theme .cart-table td {
+    border-color: #550000;
+}
+
+body.hell-theme .cart-summary-block {
+    color: #e8e0e0;
 }
