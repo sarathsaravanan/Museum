@@ -319,6 +319,14 @@ footer p {
         flex-direction: column;
     }
     
+    .history-entry {
+        flex-direction: column;
+    }
+    
+    .history-image-wrap {
+        flex: 0 0 auto;
+    }
+    
     .nav a {
         display: block;
         margin: 10px 0;
@@ -407,6 +415,111 @@ footer p {
 
 .collection-section--hidden {
     display: none;
+}
+
+.collection-modal-hint {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.open-modal {
+    cursor: pointer;
+}
+
+#collection-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content--text {
+    text-align: left;
+    max-width: 560px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.modal-content--text .close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #888;
+}
+
+.modal-content--text .close-modal:hover {
+    color: #333;
+}
+
+#modal-body .modal-title,
+#modal-body h2 {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+#modal-body p {
+    margin-bottom: 0.75rem;
+}
+
+#modal-body div {
+    margin-top: 0.5rem;
+}
+
+.history-entry {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.history-image-wrap {
+    flex: 0 0 280px;
+}
+
+.history-image-wrap img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 2px solid #555;
+}
+
+.history-text {
+    flex: 1;
+}
+
+.history-text h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.history-text p {
+    margin-bottom: 1rem;
+}
+
+.history-back {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.history-back a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.history-back a:hover {
+    text-decoration: underline;
 }
 
 .collection-item {
@@ -717,4 +830,52 @@ body.hell-theme .collection-item-caption {
 body.hell-theme .collection-item-text h3,
 body.hell-theme .collection-item-text h4 {
     color: #ff8888;
+}
+
+body.hell-theme .collection-modal-hint {
+    color: #ccaaaa;
+}
+
+body.hell-theme .modal-content--text {
+    background-color: #220a0a;
+    color: #e8e0e0;
+    border-color: #550000;
+}
+
+body.hell-theme .modal-content--text .close-modal {
+    color: #aa6666;
+}
+
+body.hell-theme .modal-content--text .close-modal:hover {
+    color: #ff8888;
+}
+
+body.hell-theme #modal-body .modal-title,
+body.hell-theme #modal-body h2 {
+    color: #ff8888;
+}
+
+body.hell-theme #modal-body p,
+body.hell-theme #modal-body div {
+    color: #ddd;
+}
+
+body.hell-theme .history-entry {
+    border-bottom-color: #440000;
+}
+
+body.hell-theme .history-image-wrap img {
+    border-color: #8b0000;
+}
+
+body.hell-theme .history-text h3 {
+    color: #ff8888;
+}
+
+body.hell-theme .history-text p {
+    color: #e8e0e0;
+}
+
+body.hell-theme .history-back a {
+    color: #ff6666;
 }

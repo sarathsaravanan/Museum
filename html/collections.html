@@ -24,14 +24,16 @@
         <div class="collection-controls">
             <button onclick="showSection('archeology')">Archeology (The Levels)</button>
             <button onclick="showSection('anthropology')">Anthropology (The Legends)</button>
+            <button onclick="showSection('histories')">Histories</button>
         </div>
+        <p class="collection-modal-hint">Click any image below to open an Interpretation modal.</p>
 
         <section id="archeology" class="collection-section">
             <h2 class="section-header">Archeology: The Constructs</h2>
             
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/collections/subsumingvortex_thumb.jpg" alt="Artifact: Subsuming Vortex">
+                    <img src="../images/collections/subsumingvortex_thumb.jpg" alt="Artifact: Subsuming Vortex" class="open-modal" data-modal-target="#modal-text-subsumingvortex">
                     <p><em>Fig 1. The Vortex Corridor</em></p>
                 </div>
                 <div class="artifact-data">
@@ -64,7 +66,7 @@
 
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/collections/tidalwave-thumb.jpg" alt="Artifact: Tidal Wave">
+                    <img src="../images/collections/tidalwave-thumb.jpg" alt="Artifact: Tidal Wave" class="open-modal" data-modal-target="#modal-text-tidalwave">
                     <p><em>Fig 2. The Blue Zenith</em></p>
                 </div>
                 <div class="artifact-data">
@@ -97,7 +99,7 @@
 
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/collections/nullscapes_thumb.jpg" alt="Artifact: Nullscapes">
+                    <img src="../images/collections/nullscapes_thumb.jpg" alt="Artifact: Nullscapes" class="open-modal" data-modal-target="#modal-text-nullscapes">
                     <p><em>Fig 3. The Void</em></p>
                 </div>
                 <div class="artifact-data">
@@ -134,7 +136,7 @@
 
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/staff_riot.jpg" alt="Subject: Riot">
+                    <img src="../images/staff_riot.jpg" alt="Subject: Riot" class="open-modal" data-modal-target="#modal-text-riot">
                     <p><em>Fig 4. The Verification God</em></p>
                 </div>
                 <div class="artifact-data">
@@ -167,7 +169,7 @@
 
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/staff_viprin.jpg" alt="Subject: Viprin">
+                    <img src="../images/staff_viprin.jpg" alt="Subject: Viprin" class="open-modal" data-modal-target="#modal-text-viprin">
                     <p><em>Fig 5. The Organizer</em></p>
                 </div>
                 <div class="artifact-data">
@@ -200,7 +202,7 @@
 
             <article class="artifact-entry">
                 <div class="artifact-image">
-                    <img src="../images/staff_colon.jpg" alt="Subject: GD Colon">
+                    <img src="../images/staff_colon.jpg" alt="Subject: GD Colon" class="open-modal" data-modal-target="#modal-text-colon">
                     <p><em>Fig 6. The Analyst</em></p>
                 </div>
                 <div class="artifact-data">
@@ -232,22 +234,216 @@
             </article>
         </section>
 
+        <section id="histories" class="collection-section collection-section--hidden">
+            <h2 class="section-header">Histories</h2>
+            <p class="collection-intro">Exhibit-style interpretations for each collection item.</p>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/collections/subsumingvortex_thumb.jpg" alt="Subsuming Vortex level structure and vortex corridor">
+                </div>
+                <div class="history-text">
+                    <h3>Subsuming Vortex</h3>
+                    <p><strong>Facts:</strong> Digital construct, high-density object count, linear waveform structure. Late 2.1 Era. Location: Impossible List archives. Verified by user Cursed. Nine Circles architecture.</p>
+                    <p><strong>Interpretation:</strong> This artifact is a linear waveform structure built from a high density of objects. Its physical properties include high-velocity gravity portals and erratic pulse triggers. It was recovered from the Impossible List archives and exists in pristine digital copy. Design analysis suggests it functioned as a ritual challenge to test human reaction speed. Verification footage by user "Cursed" provides evidence of use. Manufacture clues point to "Nine Circles" architecture—pulsing saws and vortex-style layout. The symbolism of a vortex that consumes the player is consistent with the object placement and sequence. It was found with Sonic Wave Infinity and other Impossible levels and resides in the Extreme Demon classification. Comparison to Bausha Vortex indicates similar grammar but significantly higher lethality. All claims are grounded in the artifact details; interpretation remains provisional where evidence is incomplete. Cultural phase: the Late 2.1 Era represents a peak of community ambition, when the Impossible List became a shared horizon. Excavator notes: the recovery was described as a descent into a structure that seemed to reject human presence. Interpretive tension remains between reading the object as pure challenge versus as a form of cultural expression. Local lore attributes the vortex motif to the creator's intent to overwhelm the player. Access warnings: this construct is understood by the community as one of the most demanding ever verified; engagement requires sustained commitment.</p>
+                    <p><strong>Comparative Notes:</strong> While the geometry recalls Bausha Vortex, Subsuming Vortex distinguishes itself by integration of local design language and precision of its trigger sequencing.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Interpretations are based on material context and verification records; no claims are made beyond the artifact metadata.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/collections/tidalwave-thumb.jpg" alt="Tidal Wave level blue wave gameplay">
+                </div>
+                <div class="history-text">
+                    <h3>Tidal Wave</h3>
+                    <p><strong>Facts:</strong> Digital code, XL length, massive data structure. 2023-2024. Top 1 spot (historical). Verified by Zoink. Created by Onilink, distinct blue hues.</p>
+                    <p><strong>Interpretation:</strong> This artifact is a massive data structure with beach-themed aesthetics and rapid-fire input demands. It was fully rated (Epic) and historically occupied the Top 1 spot. Verification by Zoink after thousands of attempts provides evidence of use. Manufacture is attributed to Onilink, with distinct blue hues. Likely purpose is a monument to Wave gamemode mastery. It was found with Avernus and Acheron and remains a contentious entry in the rate system. Symbolism centers on the overwhelming power of the ocean. Comparison to Slaughterhouse shows similar difficulty but different theme. All claims are grounded in the artifact details; uncertainty is acknowledged where applicable. Interpretations are based on artifact metadata and verification records. Cultural phase: 2023–2024 marks a period when the demonlist hierarchy was intensely contested. Excavator notes: the verifier described the experience as being swallowed by the tide. Interpretive tension exists between its status as a rated level and its historical Top 1 placement. Legends and local lore link the blue palette to the creator's signature and to the wave gamemode's dominance. Access warnings: the level is understood as one of the hardest wave-focused challenges; reverence for the verification persists in the community.</p>
+                    <p><strong>Comparative Notes:</strong> Resembles Slaughterhouse in difficulty but not theme; shares the wave-dominant lineage with other blue-era constructs.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Historical placement may shift; interpretations remain provisional.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/collections/nullscapes_thumb.jpg" alt="Nullscapes level dark minimalist robot section">
+                </div>
+                <div class="history-text">
+                    <h3>Nullscapes</h3>
+                    <p><strong>Facts:</strong> Digital void, RNG algorithms. Modern Era (2.2). Server Depths, Main List. Creator Ili. Found with Shardscapes.</p>
+                    <p><strong>Interpretation:</strong> This artifact presents as perceptually infinite, with dark, minimalist aesthetics and a heavy emphasis on robot mode. Preservation state is volatile. It was recovered from the Server Depths and is buried in the Main List. Likely purpose is to test memory and timing in low-visibility conditions. Evidence of use includes high death counts at final percentages. Manufacture clues point to the signature style of creator "Ili." Found with Shardscapes, it is interpreted as a sequel to that artifact. Symbolism centers on emptiness and precision. All claims are grounded in the artifact details; interpretation remains provisional where evidence is incomplete. Interpretations are based on artifact metadata. Cultural phase: the Modern Era (2.2) reflects the community's embrace of new mechanics and visual minimalism. Excavator notes: players report a sense of isolation and focus within the void. Interpretive tension lies in the balance between RNG and skill. Local lore ties the emptiness to the creator's aesthetic philosophy. Access warnings: low visibility and high precision demands make this artifact particularly taxing; the final percentages are noted for their difficulty.</p>
+                    <p><strong>Comparative Notes:</strong> Direct sequel to Shardscapes; void/minimalist construct with RNG and robot-mode emphasis.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Interpretations remain provisional.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/staff_riot.jpg" alt="Dr. Riot verifier of Bloodbath">
+                </div>
+                <div class="history-text">
+                    <h3>Dr. Riot</h3>
+                    <p><strong>Facts:</strong> Human, Legend class. Active Era 1.9–2.1. Bloodbath Archives. North American server. Verifier of Bloodbath. Founder Thunderheart coalition.</p>
+                    <p><strong>Interpretation:</strong> Dr. Riot is a living legend in the field of Demon Archeology. Having survived the "Bloodbath" expedition of the 1.9 Era, he dedicated his life to recovering artifacts that were deemed physically impossible for humans to touch. His methods are aggressive; he is known for attempting a single extraction over 30,000 times until success is achieved. He currently oversees the "Hell Wing," preserving the most volatile levels in history. His excavation style is aggressive and persistent. The Bloodbath verification stands as a watershed moment in the community timeline. Found with Cyclic and other ancient rivals in the competitive record, his symbolism is legitimacy and skill. Comparable to the modern figure Zoink in impact. All interpretations are grounded in public record and community testimony. Cultural phase: the 1.9–2.1 era is remembered as a time when the limits of human performance were being tested on a global scale. Excavator notes: contemporaries described his persistence as almost superhuman. Interpretive tension exists between his status as a verifier and his role as a community figure. Legends and local lore attribute to him the phrase "fingers of steel" and the founding of the Thunderheart coalition. Access warnings: his achievements are held in reverence; the Bloodbath verification is treated as a sacred milestone in demonlist history.</p>
+                    <p><strong>Comparative Notes:</strong> Comparable to Zoink in terms of verification impact; represents the 1.9–2.1 transition era.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Based on public records and community sources.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/staff_viprin.jpg" alt="Professor Viprin megacollab organizer">
+                </div>
+                <div class="history-text">
+                    <h3>Prof. Viprin</h3>
+                    <p><strong>Facts:</strong> Human, Creator class. Ancient Era to present. Norwegian server. Host Yatagarasu, Artificial Ascent. Copy+Paste editor style.</p>
+                    <p><strong>Interpretation:</strong> Professor Viprin studies the builders, not just the bricks. He is the world's leading expert on "Megacollabs"—the phenomenon where dozens of ancient creators united to build massive digital structures. His research focuses on how chaotic groups of creators form cohesive societies through shared building standards. He is rarely seen without his control center, organizing thousands of objects into order. Found with the Elder Moderators, his habitat is the Level Editor. His symbolism is order within chaos. He functions as a central node in the creator network. His work helps us understand how a chaotic group of creators can form a cohesive society. All interpretations are grounded in public record and community testimony. Cultural phase: from the Ancient Era to the present, megacollabs have defined some of the most ambitious community projects. Excavator notes: collaborators describe his organizational role as essential to projects like Yatagarasu and Artificial Ascent. Interpretive tension lies in balancing individual creator voice with collective output. Legends and local lore attribute to him the mantra "Ctrl+C, Ctrl+V" as the rhythm of civilization. Access warnings: his influence on the creator ecosystem is widely acknowledged; his role is treated with respect in community discourse.</p>
+                    <p><strong>Comparative Notes:</strong> A central node in the creator network; no direct equivalent in organizational role.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Based on public records and community sources.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <article class="history-entry">
+                <div class="history-image-wrap">
+                    <img src="../images/staff_colon.jpg" alt="Agent Colon cultural interpreter and critic">
+                </div>
+                <div class="history-text">
+                    <h3>Agent Colon</h3>
+                    <p><strong>Facts:</strong> Human, Fox avatar. Modern Era. Video essays on game design. Programming sector. Dash Spider Part meme event. High-quality editing and coding knowledge.</p>
+                    <p><strong>Interpretation:</strong> Agent Colon translates the abstract chaos of the Demonlist into stories the public can understand. He obsessively analyzes hitbox placements and design choices to find hidden meanings. He is famous for writing 40-page dissertations on why a single spike is "slightly misaligned." To Colon, bad gameplay is not a mistake—it is a moral failing of the creator. Found with RobTop in developer interactions, his habitat is the Code Source. His symbolism is the critique of the status quo. He is a unique entity with no direct equivalent. His work bridges community discourse and design criticism. All interpretations are grounded in public record and community testimony. Cultural phase: the Modern Era has seen the rise of video essays and design criticism as a form of community engagement. Excavator notes: viewers describe his analyses as both rigorous and entertaining. Interpretive tension exists between his role as critic and his influence on creator behavior. Legends and local lore include the "Dash Spider Part" meme event as a cautionary tale. Access warnings: creators are advised that his standards are exacting; his critiques are treated as authoritative by many in the community.</p>
+                    <p><strong>Comparative Notes:</strong> Unique entity; no direct equivalent in the interpreter role.</p>
+                    <p><strong>Cautionary Note on Interpretation:</strong> Based on public records and community sources.</p>
+                    <p><strong>On display courtesy of:</strong> The Demonlist Survey Project, in collaboration with Pointercrate.</p>
+                </div>
+            </article>
+
+            <p class="history-back"><a href="collections.html">Back to Collections</a></p>
+        </section>
+
     </main>
+
+    <div class="modal" id="collection-modal" role="dialog" aria-modal="true" aria-label="Collection interpretation">
+        <div class="modal-content modal-content--text">
+            <button class="close-modal" aria-label="Close">×</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-subsumingvortex" hidden>
+        <h2 class="modal-title">Subsuming Vortex — Collection Note</h2>
+        <p><strong>Material:</strong> High-density object count, linear waveform structure.</p>
+        <p><strong>Function:</strong> Ritual challenge testing human reaction speed.</p>
+        <p><strong>Location Found:</strong> The Impossible List Archives.</p>
+        <div>
+            <p><strong>Interpretation:</strong> This digital construct sits in the Extreme Demon classification. High-velocity gravity portals and erratic pulse triggers define its structure. Verification by user "Cursed" confirms human engagement. The "Nine Circles" architecture—pulsing saws and vortex imagery—suggests a design meant to consume the player. Found alongside Sonic Wave Infinity and other Impossible levels, it compares to Bausha Vortex but is more lethal. Interpretation is grounded in artifact metadata; meaning is inferred from placement and verification evidence.</p>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-tidalwave" hidden>
+        <h2 class="modal-title">Tidal Wave — Collection Note</h2>
+        <p><strong>Material:</strong> Massive data structure. Beach-themed aesthetics, rapid-fire inputs.</p>
+        <p><strong>Function:</strong> Monument to Wave gamemode mastery.</p>
+        <p><strong>Location Found:</strong> The Top 1 Spot (Historical).</p>
+        <div>
+            <p><strong>Interpretation:</strong> Verified by Zoink after thousands of attempts, this artifact once held the Top 1 spot. Created by Onilink with distinct blue hues, it sits with Avernus and Acheron in the rate system. The design emphasizes the overwhelming power of the ocean; difficulty is comparable to Slaughterhouse but theme differs. Interpretation is based on artifact details and verification evidence.</p>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-nullscapes" hidden>
+        <h2 class="modal-title">Nullscapes — Collection Note</h2>
+        <p><strong>Material:</strong> Perceptually infinite structure. Dark, minimalist, robot-mode heavy.</p>
+        <p><strong>Function:</strong> Test memory and timing in low-visibility conditions.</p>
+        <p><strong>Location Found:</strong> The Server Depths.</p>
+        <div>
+            <p><strong>Interpretation:</strong> Creator Ili's signature style defines this artifact. High death counts at final percentages indicate use. Found with Shardscapes and buried in the Main List, it symbolizes emptiness and precision. It is a sequel to Shardscapes. Preservation state is volatile. Interpretation is grounded in artifact details.</p>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-riot" hidden>
+        <h2 class="modal-title">Dr. Riot — Collection Note</h2>
+        <p><strong>Material:</strong> Human / Legend class.</p>
+        <p><strong>Function:</strong> To push the boundaries of what was thought possible; verifier of Bloodbath.</p>
+        <p><strong>Location Found:</strong> The Bloodbath Archives. North American server.</p>
+        <div>
+            <p><strong>Interpretation:</strong> Dr. Riot survived the Bloodbath expedition of the 1.9 Era and dedicated his life to recovering artifacts deemed physically impossible. His methods are aggressive; he is known for attempting a single extraction over 30,000 times until success. He founded the museum's Hell Wing. Evidence of use: verifier of Bloodbath. Founder of the Thunderheart coalition. Comparable to the modern figure Zoink. Interpretation grounded in public record.</p>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-viprin" hidden>
+        <h2 class="modal-title">Prof. Viprin — Collection Note</h2>
+        <p><strong>Material:</strong> Human / Creator class.</p>
+        <p><strong>Function:</strong> To unite creators into massive projects; host of Yatagarasu and Artificial Ascent.</p>
+        <p><strong>Location Found:</strong> The Geometry Dash Award Ceremonies. Norwegian server.</p>
+        <div>
+            <p><strong>Interpretation:</strong> Professor Viprin studies the builders, not just the bricks. He is the leading expert on Megacollabs—dozens of creators uniting to build massive structures. His research focuses on how chaotic groups form cohesive societies. Distinctive Copy+Paste editor style. Found with the Elder Moderators. Symbolism: order within chaos. A central node in the creator network. Interpretation grounded in public record.</p>
+        </div>
+    </div>
+
+    <div class="modal-item" id="modal-text-colon" hidden>
+        <h2 class="modal-title">Agent Colon — Collection Note</h2>
+        <p><strong>Material:</strong> Human / Fox avatar.</p>
+        <p><strong>Function:</strong> To deconstruct bad gameplay design; cultural interpreter.</p>
+        <p><strong>Location Found:</strong> Video essays on game design. The Programming sector.</p>
+        <div>
+            <p><strong>Interpretation:</strong> Agent Colon translates the abstract chaos of the Demonlist into stories the public can understand. He analyzes hitbox placements and design choices for hidden meanings. Famous for 40-page dissertations on single object alignment. Bad gameplay is a moral failing of the creator. Evidence: the Dash Spider Part meme event. Found with RobTop in developer interactions. Symbolism: critique of the status quo. Unique entity; no direct equivalent. Interpretation grounded in public record.</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2026 Museum of Geometry Dash. All rights reserved.</p>
         <p>Credit to Pointercrate demon list for information for verifiers, victors, and demon placements, and images.</p>
         <p class="ai-disclaimer">
-            "The content in this collection is made by the help of Artificial Intelligence"
+            The content in this gallery was entirely created by AI under human direction. It was then curated, reviewed and edited by a human before being published.
         </p>
     </footer>
 
     <script>
       function showSection(section) {
-        const sections = document.querySelectorAll('.collection-section');
-        sections.forEach(s => s.style.display = 'none');
-        document.getElementById(section).style.display = 'block';
+        var sections = document.querySelectorAll('.collection-section');
+        for (var i = 0; i < sections.length; i++) sections[i].style.display = 'none';
+        var el = document.getElementById(section);
+        if (el) el.style.display = 'block';
       }
+    </script>
+    <script>
+    (function(){
+      var modal = document.getElementById('collection-modal');
+      var modalBody = document.getElementById('modal-body');
+      var closeBtn = modal ? modal.querySelector('.close-modal') : null;
+      var lastTrigger = null;
+      function openFrom(selector, trigger) {
+        var src = document.querySelector(selector);
+        if (!src) return;
+        if (modalBody) modalBody.innerHTML = src.innerHTML;
+        if (modal) modal.style.display = 'block';
+        lastTrigger = trigger || null;
+        if (closeBtn) closeBtn.focus();
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        if (modal) modal.style.display = 'none';
+        if (modalBody) modalBody.innerHTML = '';
+        document.body.style.overflow = '';
+        if (lastTrigger) lastTrigger.focus();
+      }
+      document.addEventListener('click', function(e) {
+        var trigger = e.target.closest('[data-modal-target]');
+        if (trigger) {
+          e.preventDefault();
+          openFrom(trigger.getAttribute('data-modal-target'), trigger);
+          return;
+        }
+        if (e.target === modal || (e.target.closest && e.target.closest('.close-modal'))) closeModal();
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal && modal.style.display === 'block') closeModal();
+      });
+    })();
     </script>
 
 </body>
